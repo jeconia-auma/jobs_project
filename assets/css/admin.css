@@ -72,6 +72,33 @@ canvas {
     width: 100%;
 }
 
+.table {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table table tbody td {
+    text-align: right;
+    padding: 0 4px
+}
+
+.table table .odd {
+    background-color: #fff;
+}
+
+.table table tfoot{
+    text-align: center;
+}
+
+.table table thead {
+    background-color: lavender;
+}
+
 footer {
     background-color: steelblue;
     color: #fff;

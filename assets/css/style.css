@@ -1,0 +1,97 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(60deg, #302, #230);
+    background-image: url('../images/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+}
+
+.login-wrapper {
+    width: 90%;
+    height: 100vh;
+    margin: 8px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#validation-form {
+    background-color: rgba(0,0,0,.4);
+    border: 1px solid grey;
+    padding: 16px;
+    width: 90%;
+    max-width: 500px;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 1em;
+}
+
+#validation-form div{
+    width: 100%;
+}
+
+#validation-form div label, #validation-form div input {
+    width: 100%;
+    margin-bottom: 2px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+
+#validation-form div input[type=submit] {
+    justify-content: center;
+}
+
+#validation-form div input[type=text],
+#validation-form div input[type=password],
+#validation-form div input[type=email],
+#validation-form div input[type=text]:active,
+#validation-form div input[type=password]:active,
+#validation-form div input[type=email]:active{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+
+input {
+    color: #fff;
+}
+input::placeholder {
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: steelblue;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 6px;
+}
+
+.btn-primary:hover {
+    background-color: rgb(33, 33, 221);
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.error {
+    color: red;
+}

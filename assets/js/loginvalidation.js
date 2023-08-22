@@ -9,7 +9,13 @@ form.addEventListener('submit', (e) => {
         e.preventDefault();
         user_error.innerText = "Field must not be empty!!!";
     }else {
-        user_error.innerText = "";
+        if(/[a-zA-Z0-9]+@+[a-zA-Z0-9]+\.+[a-zA-Z0-9]+/.test(email.value)){
+            // alert('true');
+            user_error.innerText = "";
+        }else {
+            e.preventDefault();
+            user_error.innerText = "This must be an email";
+        }
     }
 
     if(password.value == ""){

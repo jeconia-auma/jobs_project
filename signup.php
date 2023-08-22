@@ -3,7 +3,7 @@
     <div class="container">
         <!-- Wrapper for the login and sign in form -->
         <div class="login-wrapper">
-            <form action="" id="validation-form">
+            <form action="validate.php" id="validation-form" method="post">
                 <div class="fname">
                     <label for="fname">FirstName</label>
                     <input type="text" name="fname" id="fname" placeholder="FirstName">
@@ -30,7 +30,7 @@
                     <span class="error" id="conf_pass_error"></span>
                 </div>
                 <div class="submit">
-                    <input class="btn btn-primary" type="submit" value="Sign Up" id="submit">
+                    <input class="btn btn-primary" type="submit" value="Sign Up" id="submit" name="signup">
                 </div>
             </form>
         </div>

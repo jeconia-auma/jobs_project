@@ -3,7 +3,7 @@
     <div class="container">
         <!-- Wrapper for the login and sign in form -->
         <div class="login-wrapper">
-            <form method="post" action="" id="validation-form">
+            <form method="post" action="validate.php" id="validation-form">
                 <div class="username">
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email" placeholder="Email">
@@ -15,7 +15,7 @@
                     <span class="error" id="pass_error"></span>
                 </div>
                 <div class="submit">
-                    <input class="btn btn-primary" type="submit" value="Login" id="submit">
+                    <input class="btn btn-primary" type="submit" value="Login" id="submit" name="login">
                 </div>
                 <div id="forgot_password">
                     <a href="">Forget Password</a>
